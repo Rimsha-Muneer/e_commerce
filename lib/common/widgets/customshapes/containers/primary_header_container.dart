@@ -3,8 +3,8 @@ import 'package:e_commerce_app/common/widgets/customshapes/curvedshapes/curveded
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreenHeaderWidget extends StatelessWidget {
-  const HomeScreenHeaderWidget({
+class HomeHeaderContainer extends StatelessWidget {
+  const HomeHeaderContainer({
     super.key, required this.child,
   });
   final Widget child;
@@ -31,6 +31,7 @@ class HomeScreenHeaderWidget extends StatelessWidget {
                   child: CirclularContainer(
                       backgroundColor:
                           AppConstantColors.textWhite.withOpacity(0.1))),
+                          child,
             ],
           ),
         ),
